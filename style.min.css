@@ -23,33 +23,29 @@ input[type=submit] {
 }
 
 header {
-  position: fixed;
   z-index: 140;
   display: flex;
+  position: fixed;
   flex-direction: column;
   width: 100%;
-  height: auto;
+  height: 23%;
   background-color: #ffffff;
   margin-top: -1px;
 }
 @media screen and (max-width: 767px) {
   header {
+    position: absolute;
     flex-direction: row;
   }
 }
-@media screen and (max-width: 1150px) {
-  header {
-    padding-right: 20px;
-  }
-}
-header > *:not(.mobile-button) {
-  padding: 15px 5%;
-}
 header .row {
   display: grid;
+  justify-content: space-between;
+  align-items: center;
   height: 100%;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  padding: 0px 15px;
 }
 @media screen and (min-width: 767px) {
   header .row {
@@ -59,12 +55,8 @@ header .row {
 }
 @media screen and (max-width: 1150px) {
   header .row {
-    padding: 0px;
     justify-content: space-around;
     width: 100%;
-  }
-  header .row > * {
-    margin-bottom: 1rem;
   }
   header .row > a {
     display: none;
@@ -75,7 +67,12 @@ header .row .mobile-button-wrapper {
   grid-column: 1/2;
   width: 20px;
   height: 20px;
-  margin: 5px;
+  width: 25px;
+  height: 25px;
+  /* margin: 5px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -94,6 +91,8 @@ header .row .logo-wrapper {
   grid-row: 1/2;
   grid-column: 2/3;
   text-align: center;
+  width: 100%;
+  height: 100%;
 }
 @media screen and (min-width: 767px) {
   header .row .logo-wrapper {
@@ -103,7 +102,7 @@ header .row .logo-wrapper {
   }
 }
 header .row .logo-wrapper .logo {
-  width: 40%;
+  width: 100%;
   height: 100%;
   background-image: url(https://remindbrindes.com.br/cliente/css/logo_top-vd.png?v=1);
   background-repeat: no-repeat;
@@ -115,8 +114,9 @@ header .row .logo-wrapper .logo {
     width: 70%;
   }
 }
-@media screen and (min-width: 1017px) {
+@media screen and (min-width: 1024px) {
   header .row .logo-wrapper .logo {
+    height: 100%;
     width: 40%;
   }
 }
@@ -188,7 +188,7 @@ header .row .header-form-wrapper form .header-submit {
   }
 }
 header .row .header-form-wrapper form input {
-  border-radius: 25px;
+  border-radius: 10px;
   border: 1px solid gray;
 }
 header .row .header-form-wrapper form input::placeholder {
@@ -208,7 +208,7 @@ header .row .header-contact-wrapper {
   }
 }
 header .row .header-contact-wrapper .satisfaction-svg {
-  width: 70px;
+  width: 90px;
   align-self: baseline;
 }
 header .row .header-contact-wrapper .header-contact {
@@ -237,13 +237,15 @@ header nav#categoria ul li a {
 }
 header nav {
   background-color: #c4c4c4;
+  padding: 10px;
 }
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1023px) {
   header nav {
     position: absolute;
     top: 100%;
     width: 100%;
     left: 0;
+    padding: 0px;
     display: none;
     padding-top: 0 !important;
     padding-bottom: 0 !important;
@@ -261,10 +263,11 @@ header nav.open ul {
 }
 header nav ul {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   list-style-type: none;
 }
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1023px) {
   header nav ul {
     flex-direction: column;
     text-align: center;
@@ -305,6 +308,39 @@ header nav ul li.first .submenu-container {
 header nav ul li.first .submenu-container .submenu {
   flex-direction: row;
   justify-content: flex-start;
+}
+header nav ul li.categoria.has-submenu::after {
+  content: url("svg/arrow-down.svg");
+  right: -25px;
+  top: -0.5px;
+  position: absolute;
+}
+@media screen and (max-width: 767px) {
+  header nav ul li.categoria.has-submenu::after {
+    content: "";
+  }
+}
+header nav ul li.categoria .submenu-container {
+  max-width: 80vw;
+}
+@media screen and (max-width: 1150px) {
+  header nav ul li.categoria .submenu-container {
+    position: static;
+  }
+}
+header nav ul li.categoria .submenu-container .submenu {
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 70vw;
+}
+header nav ul li.categoria .submenu-container .submenu .grupo {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+header nav ul li.categoria .submenu-container .submenu .grupo li {
+  width: 50%;
 }
 header nav ul li .submenu-container {
   display: none;

@@ -145,8 +145,8 @@ $(document).ready(function () {
     dots: false,
     slidesToShow: 1,
     draggable: false,
-    fade: true,
-    initialSlide: 1,
+    fade: false,
+    initialSlide: 0,
   });
 
   $(".depoimentos-slider li").click(function () {
