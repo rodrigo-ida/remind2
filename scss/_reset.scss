@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  font: 400 16px $font;
+}
+
+body{
+  padding-top: 1px;  //evitar margin-collapse
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button,
+input[type="submit"] {
+  cursor: pointer;
+}

@@ -1,0 +1,48 @@
+main {
+  .sobre {
+    height: auto;
+    padding: 70px $container-padding;
+    background-color: #EEEEEE;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    
+
+    .coluna-esquerda-wrapper{
+
+      text-align: right;
+      padding-right: 10%;
+    }
+
+    .coluna-direita-wrapper{
+
+      text-align: left;
+    }
+
+    .coluna-esquerda-wrapper, .coluna-direita-wrapper{
+
+      
+      h3,
+      p {
+        font: 400 18px $font;
+        margin: 1rem 0;
+        padding-bottom: 1rem;
+      }
+      
+      h2 {
+        font: bold 28px $font;
+        color: $marinho-brand;
+        padding-bottom: 2.5rem;
+
+      }
+      
+    }
+
+    @media screen and (max-width: 767px) {
+
+      flex-wrap: wrap;
+
+    }
+
+  }
+}
