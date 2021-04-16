@@ -25,6 +25,8 @@ $(document).ready(function () {
 
   })
 
+
+  // especialidades
   $(".items-row").slick({
     arrows: false,
     dots: false,

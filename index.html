@@ -1426,15 +1426,16 @@
       </section>
 
       <section class="video-depoimento">
-        <aside>
-          <video
+        <aside class="video-wrapper">
+          <video-js
             id="my-video"
             class="video-js vjs-big-play-centered"
             controls
             preload="auto"
+            bigPlayButton
             poster="img/Discovery.jpg"
-            data-setup='{"fluid": true}'
-          >
+            data-setup='{"fluid": true }'
+            >
             <source src="video/discovery.mp4" type="video/mp4" />
 
             <p class="vjs-no-js">
@@ -1444,24 +1445,16 @@
                 >supports HTML5 video</a
               >
             </p>
-          </video>
+          </video-js>
 
-          <!-- <video id="player" 
-          class="video-js vjs-big-play-centered" 
-          controls preload="none" 
-          width="960" 
-          height="400" 
-        data-setup='{fluid: true}'>
-        
-          </video> -->
         </aside>
 
-        <aside>
+        <aside class="quote-wrapper">
           <h2>Projeto Discovery - Animal Planet</h2>
           <p>
             <span class="quote">&#8220;</span>
             Este é um dos vários brindes desenvolvidos sob medida. A nossa
-            "Linha de Porta Objetos" é 100% personalizada, nar cor, forma e
+            "Linha de Porta Objetos" é 100% personalizada, na cor, forma e
             tamanho. São brindes que elevam o nível de personalização, com
             grande poder de fixação da sua marca, como por exemplo o elefante
             produzido para a Animal Planet - Discovery, para divulgar a sua nova
@@ -1668,7 +1661,7 @@
         <div class="blockquote-slider">
           <blockquote>
             <div class="img-container">
-              <img src="img/depoimento/cliente-satisfeito.jpg" alt="" title="" />
+              <img src="img/depoimento/cliente-satisfeito.jpg" alt="" title="" style="border-radius: 100px;"/>
             </div>
             <q>
               Gostaria de enfatizar dois aspectos que tornaram a Remind Brindes

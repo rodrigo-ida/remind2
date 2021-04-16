@@ -12,19 +12,13 @@ main {
         max-width: 100%;
         max-height: 100%;
 
-         .vjs-big-play-button {
-         
-          width: 20%;
-          height: 20%;
+        .vjs-big-play-button {
 
-          .vjs-icon-placeholder:before{
+
+          .vjs-icon-placeholder:before {
             font-size: 40px;
           }
-
-          
-      }
-        
-
+        }
       }
 
       h2 {
@@ -39,21 +33,25 @@ main {
         color: $light-black;
         display: flex;
 
-        .quote{
+        .quote {
           font-size: 3rem;
           margin-top: -15px;
-
         }
       }
     }
 
     @media screen and (max-width: 767px) {
       grid-template-columns: repeat(1, 100%);
-      row-gap: 2rem;
+      // row-gap: 2rem;
+      // grid-template-rows: 180px;
+      grid-template-rows: 220px;
+
+
 
       aside:last-child {
-        order: -1;
+        // order: -1;
       }
     }
+    
   }
 }

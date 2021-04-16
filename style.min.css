@@ -62,6 +62,11 @@ header .row {
     display: none;
   }
 }
+@media screen and (min-width: 1320px) {
+  header .row {
+    padding: 0px 40px;
+  }
+}
 header .row .mobile-button-wrapper {
   grid-row: 1/2;
   grid-column: 1/2;
@@ -120,6 +125,11 @@ header .row .logo-wrapper .logo {
     width: 40%;
   }
 }
+@media screen and (min-width: 1320px) {
+  header .row .logo-wrapper .logo {
+    width: 34%;
+  }
+}
 header .row .cart-wrapper {
   grid-row: 1/2;
   grid-column: 3/4;
@@ -147,6 +157,11 @@ header .row .header-form-wrapper {
     grid-column: 2/3;
   }
 }
+@media screen and (min-width: 1320px) {
+  header .row .header-form-wrapper {
+    margin-left: 90px;
+  }
+}
 header .row .header-form-wrapper form {
   width: 100%;
   display: flex;
@@ -159,7 +174,7 @@ header .row .header-form-wrapper form {
   }
 }
 header .row .header-form-wrapper form input {
-  width: 70%;
+  width: 80%;
   text-align: center;
 }
 header .row .header-form-wrapper form input::placeholder {
@@ -250,6 +265,11 @@ header nav {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
     background-color: #fff;
+  }
+}
+@media screen and (min-width: 1320px) {
+  header nav {
+    padding: 15px;
   }
 }
 header nav.open {
@@ -1023,7 +1043,7 @@ main .explicacao ol li h3 {
 main .explicacao ol li p {
   font: 400 16px "Lato", sans-serif;
   color: #4a4a4a;
-  padding: 0.4rem;
+  padding: 1rem 0.4rem;
 }
 @media screen and (max-width: 767px) {
   main .explicacao ol {
@@ -1193,10 +1213,6 @@ main .video-depoimento aside .video-js {
   max-width: 100%;
   max-height: 100%;
 }
-main .video-depoimento aside .video-js .vjs-big-play-button {
-  width: 20%;
-  height: 20%;
-}
 main .video-depoimento aside .video-js .vjs-big-play-button .vjs-icon-placeholder:before {
   font-size: 40px;
 }
@@ -1218,10 +1234,7 @@ main .video-depoimento aside p .quote {
 @media screen and (max-width: 767px) {
   main .video-depoimento {
     grid-template-columns: repeat(1, 100%);
-    row-gap: 2rem;
-  }
-  main .video-depoimento aside:last-child {
-    order: -1;
+    grid-template-rows: 220px;
   }
 }
 
