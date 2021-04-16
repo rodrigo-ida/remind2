@@ -31,6 +31,7 @@ header {
   height: 23%;
   background-color: #ffffff;
   margin-top: -1px;
+  padding-top: 10px;
 }
 @media screen and (max-width: 767px) {
   header {
@@ -106,9 +107,16 @@ header .row .logo-wrapper {
     text-align: left;
   }
 }
+@media screen and (min-width: 1023px) {
+  header .row .logo-wrapper {
+    width: 50%;
+    margin-bottom: 10px;
+  }
+}
 @media screen and (min-width: 1320px) {
   header .row .logo-wrapper {
-    width: 33%;
+    width: 43%;
+    margin-bottom: 10px;
   }
 }
 header .row .logo-wrapper .logo {
@@ -127,7 +135,7 @@ header .row .logo-wrapper .logo {
 @media screen and (min-width: 1024px) {
   header .row .logo-wrapper .logo {
     height: 100%;
-    width: 40%;
+    width: 100%;
   }
 }
 @media screen and (min-width: 1320px) {
@@ -227,6 +235,11 @@ header .row .header-contact-wrapper {
     display: none;
   }
 }
+@media screen and (min-width: 1320px) {
+  header .row .header-contact-wrapper {
+    margin-bottom: 10px;
+  }
+}
 header .row .header-contact-wrapper .satisfaction-svg {
   width: 90px;
   align-self: baseline;
@@ -274,7 +287,7 @@ header nav {
 }
 @media screen and (min-width: 1320px) {
   header nav {
-    padding: 15px;
+    padding: 15px 40px;
   }
 }
 header nav.open {
@@ -310,6 +323,19 @@ header nav ul li a {
   text-transform: uppercase;
   color: #768688;
   font-size: 0.9rem;
+}
+header nav ul li.first-mobile {
+  display: none;
+}
+@media screen and (max-width: 1023px) {
+  header nav ul li.first-mobile {
+    display: block;
+  }
+}
+@media screen and (max-width: 1023px) {
+  header nav ul li.first {
+    display: none;
+  }
 }
 header nav ul li.first.has-submenu::after {
   content: url("svg/arrow-down.svg");
@@ -610,7 +636,6 @@ main .banner .banner-item {
 main .banner .banner-item h1 {
   font: bold 52px "Lato", sans-serif;
   width: 45%;
-  text-shadow: 1px 1px black;
 }
 main .banner .banner-item h2 {
   font: 500 20px "Lato", sans-serif;
@@ -734,7 +759,7 @@ main .clientes-atendidos blockquote q::after, main .clientes-atendidos blockquot
   }
   main .clientes-atendidos blockquote q {
     margin: 0;
-    text-align: center;
+    text-align: left;
   }
 }
 
@@ -838,9 +863,7 @@ main .especialidades {
   background-image: url("img/especialidades-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: -5rem;
-  padding: 10rem 10%;
-  padding-top: 10rem;
+  padding: 5rem 10%;
 }
 main .especialidades .items-row .slick-track {
   padding-bottom: 2rem;
@@ -1180,6 +1203,11 @@ main .sobre {
   display: flex;
   justify-content: center;
   min-height: 100vh;
+}
+@media screen and (min-width: 1440px) {
+  main .sobre {
+    min-height: 80vh;
+  }
 }
 main .sobre .coluna-esquerda-wrapper {
   text-align: right;

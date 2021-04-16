@@ -3,9 +3,13 @@ main {
     background-image: url("img/especialidades-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: -5rem;
-    padding: 10rem $container-padding;
-    padding-top: 10rem;
+    padding: 5rem $container-padding;
+    
+    // margin-top: -5rem;
+    // padding-bottom: 5rem;
+    // padding: 5rem 10%;
+
+
 
     .items-row {
       .slick-track {

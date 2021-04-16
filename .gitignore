@@ -21,6 +21,15 @@
 .env.production.local
 /video
 
+### Sass ###
+.sass-cache/
+*.css.map
+
+.sass-cache/
+*.sass.map
+*.scss.map
+
+
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
