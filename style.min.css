@@ -115,7 +115,7 @@ header .row .logo-wrapper {
 }
 @media screen and (min-width: 1320px) {
   header .row .logo-wrapper {
-    width: 43%;
+    width: 33%;
     margin-bottom: 10px;
   }
 }
@@ -382,7 +382,7 @@ header nav ul li.categoria .submenu-container {
 header nav ul li.categoria .submenu-container .submenu {
   flex-direction: row;
   justify-content: flex-start;
-  width: 70vw;
+  width: 100vw;
 }
 header nav ul li.categoria .submenu-container .submenu .grupo {
   width: 100%;
