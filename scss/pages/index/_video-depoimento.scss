@@ -1,11 +1,26 @@
 main {
-  .video-depoimento {
+
+  .video-depoimento-wrapper {
+
     background-color: $light-grey;
-    padding: $container-padding;
+    padding-top: 30px;
+
+
+    .title{
+      font-size: 2rem;
+      text-align: center;
+      background-color: transparent;
+    }
+  }
+
+  .video-depoimento {
+    padding: 5% 10%;
+
     display: grid;
     justify-content: space-between;
     grid-template-columns: repeat(2, 40%);
     grid-template-rows: 300px;
+
 
     aside {
       .video-js {
