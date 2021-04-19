@@ -419,6 +419,7 @@ header nav ul li.categoria .submenu-container .submenu {
   justify-content: flex-start;
   width: 70vw;
   height: 50vh;
+  padding-bottom: 20px;
 }
 header nav ul li.categoria .submenu-container .submenu .grupo {
   width: 100%;
@@ -831,11 +832,11 @@ main .contato .form-wrapper form .row .input-label-wrapper {
   justify-content: space-between;
   width: 100%;
 }
-main .contato .form-wrapper form .row .input-label-wrapper input {
+main .contato .form-wrapper form .row .input-label-wrapper input, main .contato .form-wrapper form .row .input-label-wrapper select {
   width: 90%;
 }
-main .contato .form-wrapper form .row .input-label-wrapper select {
-  width: 90%;
+main .contato .form-wrapper form .row .input-label-wrapper .even-input {
+  width: 100%;
 }
 main .contato .form-wrapper form .row .input-label-wrapper label {
   padding: 10px 0;

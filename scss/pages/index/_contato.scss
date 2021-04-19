@@ -30,12 +30,15 @@ main {
             justify-content: space-between;
             width: 100%;
 
-            input {
+            input,select {
               width: 90%;
             }
-            select {
-              width: 90%;
+
+            .even-input{
+              width: 100%;
             }
+
+
             label {
               padding: 10px 0;
             }
