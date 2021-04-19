@@ -25,7 +25,7 @@ input[type=submit] {
 header {
   z-index: 140;
   display: flex;
-  position: fixed;
+  position: absolute;
   flex-direction: column;
   width: 100%;
   height: 23%;
@@ -119,6 +119,11 @@ header .row .logo-wrapper {
     margin-bottom: 10px;
   }
 }
+@media screen and (min-width: 1900px) {
+  header .row .logo-wrapper {
+    width: 43%;
+  }
+}
 header .row .logo-wrapper .logo {
   width: 100%;
   height: 100%;
@@ -186,6 +191,11 @@ header .row .header-form-wrapper form {
     width: 100%;
   }
 }
+@media screen and (min-width: 1900px) {
+  header .row .header-form-wrapper form {
+    height: 50px;
+  }
+}
 header .row .header-form-wrapper form input {
   width: 80%;
   text-align: center;
@@ -244,6 +254,11 @@ header .row .header-contact-wrapper .satisfaction-svg {
   width: 90px;
   align-self: baseline;
 }
+@media screen and (min-width: 1900px) {
+  header .row .header-contact-wrapper .satisfaction-svg {
+    width: 130px;
+  }
+}
 header .row .header-contact-wrapper .header-contact {
   margin-left: 25px;
 }
@@ -251,12 +266,27 @@ header .row .header-contact-wrapper .header-contact .header-contact__ajuda {
   color: gray;
   font-size: 1.3rem;
 }
+@media screen and (min-width: 1900px) {
+  header .row .header-contact-wrapper .header-contact .header-contact__ajuda {
+    font-size: 2.3rem;
+  }
+}
 header .row .header-contact-wrapper .header-contact .header-contact__numero {
   color: #b3c134;
   font-size: 1.3rem;
 }
+@media screen and (min-width: 1900px) {
+  header .row .header-contact-wrapper .header-contact .header-contact__numero {
+    font-size: 2.3rem;
+  }
+}
 header .row .header-contact-wrapper .header-contact .header-contact__email {
   color: gray;
+}
+@media screen and (min-width: 1900px) {
+  header .row .header-contact-wrapper .header-contact .header-contact__email {
+    font-size: 1.6rem;
+  }
 }
 header nav#categoria {
   margin-top: 0;
@@ -288,6 +318,11 @@ header nav {
 @media screen and (min-width: 1320px) {
   header nav {
     padding: 15px 40px;
+  }
+}
+@media screen and (min-width: 1900px) {
+  header nav {
+    padding: 25px 40px;
   }
 }
 header nav.open {
@@ -382,16 +417,20 @@ header nav ul li.categoria .submenu-container {
 header nav ul li.categoria .submenu-container .submenu {
   flex-direction: row;
   justify-content: flex-start;
-  width: 100vw;
+  width: 70vw;
+  height: 50vh;
 }
 header nav ul li.categoria .submenu-container .submenu .grupo {
   width: 100%;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-around;
+  height: 100%;
+  justify-content: space-between;
 }
 header nav ul li.categoria .submenu-container .submenu .grupo li {
   width: 50%;
+  padding-top: 10px;
 }
 header nav ul li .submenu-container {
   display: none;
@@ -782,6 +821,21 @@ main .contato aside:first-child form {
 main .contato aside:first-child form .row {
   display: flex;
   justify-content: space-between;
+}
+main .contato aside:first-child form .row .input-label-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+main .contato aside:first-child form .row .input-label-wrapper input {
+  width: 90%;
+}
+main .contato aside:first-child form .row .input-label-wrapper select {
+  width: 90%;
+}
+main .contato aside:first-child form .row .input-label-wrapper label {
+  padding: 10px 0;
 }
 main .contato aside:first-child form input,
 main .contato aside:first-child form select,
@@ -1209,6 +1263,11 @@ main .sobre {
     min-height: 80vh;
   }
 }
+@media screen and (min-width: 1900px) {
+  main .sobre {
+    min-height: 60vh;
+  }
+}
 main .sobre .coluna-esquerda-wrapper {
   text-align: right;
   padding-right: 10%;
@@ -1253,6 +1312,9 @@ main .video-depoimento {
 main .video-depoimento aside .video-js {
   max-width: 100%;
   max-height: 100%;
+}
+main .video-depoimento aside .video-js .vjs-poster {
+  background-size: cover;
 }
 main .video-depoimento aside .video-js .vjs-big-play-button .vjs-icon-placeholder:before {
   font-size: 40px;

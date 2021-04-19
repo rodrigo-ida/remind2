@@ -20,6 +20,26 @@ main {
           .row {
             display: flex;
             justify-content: space-between;
+            
+            .input-label-wrapper{
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              width: 100%;
+
+              input{
+                width: 90%;
+
+              }
+              select{
+                width: 90%;
+              }
+              label{
+                padding: 10px 0;
+
+              }
+
+            }
           }
 
           input,

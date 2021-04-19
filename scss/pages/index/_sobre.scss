@@ -11,6 +11,12 @@ main {
       
       min-height: 80vh;
     }
+    @media screen and (min-width: 1900px){
+      
+      min-height: 60vh;
+    }
+
+
     
 
     .coluna-esquerda-wrapper{
