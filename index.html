@@ -175,7 +175,7 @@
         </div> -->
 
         <div class="header-form-wrapper">
-          <form action="" class="header-form">
+          <form class="header-form">
             <input type="text" name="search" id="search" />
             <input
               type="image"
@@ -1934,6 +1934,21 @@
         ).height);
 
       computeMainMargin();
+
+      const formHandler = () => {
+        const form = document.querySelector('.header-form')
+        form.addEventListener('submit', event => {
+          // e.preventDefault()
+          event.preventDefault();
+
+          const searchInputValue = document.querySelector('#search').value
+
+          form.action = `https://www.remindbrindes.com.br/catalogo.php?search=${searchInputValue}`
+          form.submit()
+        })
+      }
+
+      formHandler()
     </script>
 
     <script
