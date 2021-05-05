@@ -41,16 +41,20 @@ main {
 
       padding: 160px;
 
-      h1 {
+      h2 {
         font: bold 52px $font;
         width: 45%;
-        // text-shadow: 1px 1px black;
+        text-shadow: 2px 3px black;
+
       }
 
-      h2 {
+      h3 {
         font: 500 20px $font;
         margin: 1rem 0;
         width: 45%;
+        text-shadow: 1px -1px black;
+
+
       }
 
       a {
@@ -60,6 +64,7 @@ main {
         border-radius: 25px;
         background-color: $verde-brand;
         width: min-content;
+        margin-top: 1rem;
       }
     }
 
@@ -99,19 +104,21 @@ main {
       background-color: $grey;
       padding: $container-padding;
 
+
       .banner-item {
         margin-top: 0;
         background-image: none !important;
         padding: 0;
 
-        h1 {
+        h2 {
           font-size: 36px;
         }
 
-        h1,
-        h2 {
+        h2,
+        h3 {
           width: auto;
         }
+        
       }
     }
   }

@@ -30,14 +30,14 @@ main {
             justify-content: space-between;
             width: 100%;
 
-            input,select {
+            input,
+            select {
               width: 90%;
             }
 
-            .even-input{
+            .even-input {
               width: 100%;
             }
-
 
             label {
               padding: 10px 0;
@@ -83,7 +83,6 @@ main {
           }
         }
       }
-
     }
 
     .endereco-wrapper {
@@ -109,13 +108,17 @@ main {
           font: bold 18px $font;
           font-style: normal;
           color: $verde-brand;
-          
-          @media screen and (min-width: 1900px){
+
+          @media screen and (min-width: 1900px) {
             font: bold 32px $font;
-
-
           }
         }
+      }
+
+      .phone-number-list{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
       }
     }
 

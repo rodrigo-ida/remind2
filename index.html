@@ -157,45 +157,59 @@
 
   <body>
     <header>
-      <div class="row">
-        <div class="mobile-button-wrapper mobile-button">
+      <div class="header-content-wrapper">
+        <button class="mobile-button-wrapper mobile-button">
           <div class="mobile-button__burguer"></div>
           <div class="mobile-button__burguer"></div>
           <div class="mobile-button__burguer"></div>
-        </div>
+        </button>
 
-        <div class="logo-wrapper">
+        <h1 class="logo-wrapper">
           <a href="/" title="Remind Brindes">
-            <div class="logo"></div>
+            <div class="logo">Remind - Brindes Personalizados</div>
+          </a>
+        </h1>
+
+        <div class="catalogue-download-wrapper">
+          <a href="https://www.remindbrindes.com.br/arquivos/PDF/Remind_CatalogoHigh.pdf">
+            <button class="catalogue-download-button">
+              <img src="img/header/catalogo-download.png" class="catalogue-img" title="baixe catalogo">
+            </button>
+            <p>Baixe nosso catálogo</p>
           </a>
         </div>
 
-        <!-- <div class="cart-wrapper">
-          <img src="svg/header/cart.svg" class="cart-img" alt="cart" />
-        </div> -->
-
         <div class="header-form-wrapper">
-          <form class="header-form">
-            <input type="text" name="search" id="search" />
-            <input
+          <button class="show-header-form-btn"><img src="svg/header/search.svg"/></button>
+
+
+          <div class="input-wrapper">
+            <button class="hide-input-button">&lt;</button>
+
+            <form class="header-form">
+              <input type="text" name="search" id="search" placeholder="Procure seu brinde"/>
+              <input
               type="image"
               src="svg/header/search.svg"
               alt="Submit Form"
               class="header-submit"
-            />
-          </form>
+              />
+            </form>
+          </div>
         </div>
 
         <div class="header-contact-wrapper">
-          <img
-            src="svg/header/satisfaction-guaranteed.svg"
-            alt="satisfação garantida"
-            class="satisfaction-svg"
-          />
+
           <div class="header-contact">
             <p class="header-contact__ajuda">Precisa de ajuda?</p>
-            <p class="header-contact__numero">(11)3902-4997</p>
-            <p class="header-contact__email">alo@remindbrindes.com.br</p>
+            <div class="header-contact__numero-wrapper">
+              <img src="svg/phone.svg" alt="Phone" class="phone-img"/>
+
+              <a target="_blank" href="tel:551139024997" title="Telefone" class="header-contact__numero">
+                (11) 3902-4997
+              </a>
+            </div>
+            <a class="header-contact__email" href="mailto:alo@rdmais.com">alo@rdmais.com.br</a>
           </div>
         </div>
       </div>
@@ -832,6 +846,9 @@
           <li class="has-submenu">
             <a href="https://www.remindbrindes.com.br/brindes/70/cadernos-brindes-personalizados" title="CADERNO PERSONALIZADO">CADERNO PERSONLIZADO</a>
           </li>
+          <li class="has-submenu">
+            <a href="https://www.remindbrindes.com.br/brindes/70/cadernos-brindes-personalizados" class="catalogue-mobile-only" title="BAIXE NOSSO CATALOGO">BAIXE NOSSO CATALOGO</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -841,50 +858,36 @@
         <div class="banner-slider">
           <div
             class="banner-item"
-            style="background-image: url('img/banners/banner1.jpg')"
+            style="background-image: url('img/first-carousel/brindes-personalizados-caderno.jpg')"
           >
-            <h1>Brindes Personalizados e entrega sem atraso!</h1>
-            <h2>
+            <h2>Brindes Personalizados e entrega sem atraso!</h2>
+            <h3>
               Conheça todos os nossos produtos, garantimos qualidade e um Design
               diferenciado que valoriza a sua marca.
-            </h2>
-            <a href="https://www.remindbrindes.com.br/or%C3%A7amento" title="ORÇAMENTOS">ORÇAMENTOS</a>
+            </h3>
+            <a href="https://www.remindbrindes.com.br/" title="ORÇAMENTOS">ORÇAMENTOS</a>
           </div>
 
           <div
             class="banner-item"
-            style="background-image: url('img/banners/banner2.jpg')"
+            style="background-image: url('img/first-carousel/kit-cafereira-italiana.jpg')"
           >
-            <h1>Brindes Personalizados e entrega sem atraso!</h1>
-            <h2>
-              Conheça todos os nossos produtos, garantimos qualidade e um Design
-              diferenciado que valoriza a sua marca.
-            </h2>
-            <a href="https://www.remindbrindes.com.br/or%C3%A7amento" title="ORÇAMENTOS">ORÇAMENTOS</a>
+            <h2>Kit Cafeteira Italiana Exclusiva</h2>
+            <!-- <h3>
+              Confira a nossa linha de produtos incriveis!
+            </h3> -->
+            <a href="https://www.remindbrindes.com.br/" title="ORÇAMENTOS">ORÇAMENTOS</a>
           </div>
 
           <div
             class="banner-item"
-            style="background-image: url('img/banners/banner3.jpg')"
+            style="background-image: url('img/first-carousel/kit-caderno-personalizado.jpg')"
           >
-            <h1>Brindes Personalizados e entrega sem atraso!</h1>
-            <h2>
-              Conheça todos os nossos produtos, garantimos qualidade e um Design
-              diferenciado que valoriza a sua marca.
-            </h2>
-            <a href="https://www.remindbrindes.com.br/or%C3%A7amento" title="ORÇAMENTOS">ORÇAMENTOS</a>
-          </div>
-
-          <div
-            class="banner-item"
-            style="background-image: url('img/banners/banner4.jpg')"
-          >
-            <h1>Brindes Personalizados e entrega sem atraso!</h1>
-            <h2>
-              Conheça todos os nossos produtos, garantimos qualidade e um Design
-              diferenciado que valoriza a sua marca.
-            </h2>
-            <a href="https://www.remindbrindes.com.br/or%C3%A7amento" title="ORÇAMENTOS">ORÇAMENTOS</a>
+            <h2>Produtos de alta qualidade</h2>
+            <h3>
+              Sofisticação e design diferenciado para a sua empresa.
+            </h3>
+            <a href="https://www.remindbrindes.com.br/" title="ORÇAMENTOS">ORÇAMENTOS</a>
           </div>
         </div>
       </section>
@@ -1728,25 +1731,28 @@
         <aside class="form-wrapper">
           <h2>Tire suas Dúvidas</h2>
 
-          <form action="">
+          <form 
+          action="https://remind.otimaideia.com.br/contactForm.php" 
+          method="POST" 
+          accept-charset="UTF-8">
             <div class="row">
               <div class="input-label-wrapper">
                 <label>Nome</label>
-                <input type="text"  />
+                <input type="text"  name="nome" required />
               </div>
                 <div class="input-label-wrapper">
                   <label>Email</label>
-                <input type="email"  class="even-input"/>
+                <input type="email"  class="even-input" name="email" required />
                 </div>
             </div>
             <div class="row">
               <div class="input-label-wrapper">
                 <label>Telefone</label>
-              <input type="number" />
+              <input type="tel" name="telefone" />
               </div>
               <div class="input-label-wrapper">
                 <label>Melhor horário para contato</label>
-              <select name="" id="" class="even-input">
+              <select name="horario" class="even-input" required >
                 <option value="" selected disabled>
                   Melhor horário
                 </option>
@@ -1756,14 +1762,15 @@
               </select>
               </div>
             </div>
-            <textarea
+            <textarea name="message"
               style="resize: none"
               cols="30"
               rows="10"
               placeholder="Mensagem"
+              required 
             ></textarea>
 
-            <button type="submit">Enviar mensagem</button>
+            <button type="submit" name="submit">Enviar mensagem</button>
           </form>
         </aside>
 
@@ -1780,20 +1787,23 @@
 
           <div class="item-row">
             <img src="svg/phone.svg" alt="Phone" />
-            <a target="_blank" href="tel:551139024997" title="Telefone">
-              (11) 3902-4997
-            </a>
-          </div>
-
-          <div class="item-row">
-            <img src="svg/whatsapp.svg" alt="Whatsapp" />
-            <a
-              href="https://api.whatsapp.com/send?1=pt_BR&phone=5511972053030"
-              target="_blank"
-              title="Whatsapp"
-            >
-              (11) 97205-3030
-            </a>
+            <ul class="phone-number-list">
+              <li>
+                <a target="_blank" href="tel:551139024997" title="Telefone">
+                  (11) 3902-4997
+                </a>
+              </li>
+              <li>
+                <a target="_blank" href="tel:551139023475" title="Telefone">
+                  (11) 3902-3475
+                </a>
+              </li>
+              <li>
+                <a target="_blank" href="tel:551139031661" title="Telefone">
+              </li>
+                (11) 3903-1661
+              </a>
+            </ul>
           </div>
 
           <div class="item-row">
@@ -1836,7 +1846,7 @@
       <div class="footer-newsletter">
         <p>Receba nossas novidades</p>
         <form>
-          <input type="text" placeholder="name@company.com.br" class="input" />
+          <input type="text" placeholder="digite seu email" class="input" />
           <input type="submit" value="enviar" class="submit" />
         </form>
       </div>
@@ -1864,8 +1874,23 @@
               />
             </div>
             <div class="number-wrapper">
-              <p>(11)3902 4997</p>
-              <p>(11) 3903 1667</p>
+              <ul class="phone-number-list">
+                <li>
+                  <a target="_blank" href="tel:551139024997" title="Telefone">
+                    (11) 3902-4997
+                  </a>
+                </li>
+                <li>
+                  <a target="_blank" href="tel:551139023475" title="Telefone">
+                    (11) 3902-3475
+                  </a>
+                </li>
+                <li>
+                  <a target="_blank" href="tel:551139031661" title="Telefone">
+                </li>
+                  (11) 3903-1661
+                </a>
+              </ul>
             </div>
           </div>
           <div class="icon-content-wrapper">
@@ -1923,33 +1948,11 @@
           </div>
         </section>
       </div>
-    </footer>
+   <script type="text/javascript" id="lzdefsc" src="//remind.otimaideia.com.br/livezilla/livezilla/script.php?id=lzdefsc" defer></script>
+  </footer>
 
-    <script>
-      const computeMainMargin = () =>
-        (document.querySelector(
-          "main"
-        ).style.marginTop = window.getComputedStyle(
-          document.querySelector("header")
-        ).height);
+  <script src="header-form-handler.js"></script>
 
-      computeMainMargin();
-
-      const formHandler = () => {
-        const form = document.querySelector('.header-form')
-        form.addEventListener('submit', event => {
-          // e.preventDefault()
-          event.preventDefault();
-
-          const searchInputValue = document.querySelector('#search').value
-
-          form.action = `https://www.remindbrindes.com.br/catalogo.php?search=${searchInputValue}`
-          form.submit()
-        })
-      }
-
-      formHandler()
-    </script>
 
     <script
       type="text/javascript"

@@ -1,0 +1,144 @@
+.header-form-wrapper {
+    grid-row: 1/2;
+    grid-column: 3/4;
+    margin-bottom: 0;
+    display: flex;
+    align-self: center;
+    justify-self: end;
+    
+    @media screen and (min-width: 767px) {
+      grid-row: 1/2;
+      grid-column: 2/3;
+      justify-self: stretch;
+
+    }
+
+    @media screen and (min-width: 1320px){
+      // margin-left: 90px;
+
+    }
+
+    .show-header-form-btn{
+
+      background: transparent;
+      border: none;
+      width: 30px;
+      align-self: flex-start;
+
+      @media screen and (min-width: 767px){
+
+        display: none;
+
+      }
+
+    }
+
+
+
+    .input-wrapper{
+      height: 100px;
+      width: 100%;
+      background-color: white;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transform: translateY(-150px);
+
+      @media screen and (min-width: 767px){
+
+        position: static;
+        transform: translate(0);
+
+      }
+
+    }
+
+    .show-search-form{  //usado na função para mostrar o input 
+
+      transform: translateY(0px);
+      transition: all .3s;
+
+    }
+
+    .hide-input-button{
+      background-color: transparent;
+      border: none;
+      font-size: 1.3rem;
+      margin-right: 15px;
+
+
+      @media screen and (min-width: 767px){
+
+        display: none;
+      }
+
+
+    }
+
+    form {
+
+      width: 80%;
+    display: flex;
+    justify-content: center;
+    height: 40px;
+
+    @media screen and (min-width: 767px){
+
+      width: 100%;
+
+    }
+      
+
+      
+      @media screen and (min-width: 1900px) {
+        height: 50px;
+
+      }
+
+
+      #search {
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        width: 80%;
+        padding-left: 10px;
+        background-color: #f5f5f5;
+
+        &::placeholder {
+          font-size: 1rem;
+
+        }
+
+        @media screen and (min-width: 767px){
+          width: 100%;
+        }
+
+      }
+
+      .header-submit {
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        width: 50px;
+        background-color: #f5f5f5;
+        padding: 10px;
+
+        @media screen and (max-width: 766px) {
+          width: 60px;
+          padding: 10px;
+        }
+      }
+
+      input {
+        border-radius: 5px;
+        border: 1px solid gray;
+
+        &::placeholder {
+          font: bold 16px $font;
+          color: gray;
+        }
+      }
+    }
+  }
