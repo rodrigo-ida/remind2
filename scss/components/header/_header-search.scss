@@ -5,6 +5,7 @@
     display: flex;
     align-self: center;
     justify-self: end;
+
     
     @media screen and (min-width: 767px) {
       grid-row: 1/2;
@@ -36,6 +37,7 @@
 
 
     .input-wrapper{
+      z-index: 999999999;
       height: 100px;
       width: 100%;
       background-color: white;
@@ -79,21 +81,20 @@
 
     }
 
-    form {
+    .header-form {
 
       width: 80%;
-    display: flex;
-    justify-content: center;
-    height: 40px;
+      display: flex;
+      justify-content: center;
+      height: 40px;
 
-    @media screen and (min-width: 767px){
+      @media screen and (min-width: 767px){
 
-      width: 100%;
+        width: 100%;
 
-    }
+      }
       
-
-      
+        
       @media screen and (min-width: 1900px) {
         height: 50px;
 
@@ -104,6 +105,7 @@
         border-top-right-radius: 0px;
         border-bottom-right-radius: 0px;
         width: 80%;
+        height: 100%;
         padding-left: 10px;
         background-color: #f5f5f5;
 
@@ -116,6 +118,41 @@
           width: 100%;
         }
 
+      }
+
+      .autocomplete {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        z-index: 999999999;
+
+      }
+
+      .autocomplete-items {
+        position: absolute;
+        border: 1px solid #d4d4d4;
+        border-bottom: none;
+        border-top: none;
+        z-index: 99;
+        /*position the autocomplete items to be the same width as the container:*/
+        top: 100%;
+        left: 0;
+        right: 0;
+      }
+      .autocomplete-items div {
+        padding: 10px;
+        cursor: pointer;
+        background-color: #fff;
+        border-bottom: 1px solid #d4d4d4;
+      }
+      .autocomplete-items div:hover {
+        /*when hovering an item:*/
+        background-color: #e9e9e9;
+      }
+      .autocomplete-active {
+        /*when navigating through the items using the arrow keys:*/
+        background-color: DodgerBlue !important;
+        color: #ffffff;
       }
 
       .header-submit {
