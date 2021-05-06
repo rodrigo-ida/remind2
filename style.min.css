@@ -701,6 +701,14 @@ footer .footer-bottom .footer-sociais h2 {
     margin-right: 20px;
   }
 }
+footer .footer-email-link {
+  color: black;
+  text-decoration: none;
+}
+footer a {
+  color: black;
+  text-decoration: none;
+}
 
 main .banner {
   color: white;
@@ -727,22 +735,24 @@ main .banner .slick-arrow {
   }
 }
 main .banner .banner-item {
+  height: 280px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-size: cover;
   padding: 160px;
+  background-size: 100% 280px;
+  background-repeat: no-repeat;
 }
 main .banner .banner-item h2 {
-  font: bold 52px "Lato", sans-serif;
+  font: bold 30px "Lato", sans-serif;
   width: 45%;
-  text-shadow: 2px 3px black;
+  color: white;
 }
 main .banner .banner-item h3 {
   font: 500 20px "Lato", sans-serif;
   margin: 1rem 0;
   width: 45%;
-  text-shadow: 1px -1px black;
+  color: white;
 }
 main .banner .banner-item a {
   font: bold 16px "Lato", sans-serif;
@@ -752,6 +762,9 @@ main .banner .banner-item a {
   background-color: #b3c134;
   width: min-content;
   margin-top: 1rem;
+}
+main .banner .banner-bebidas {
+  background-position-x: right;
 }
 main .banner .slick-dots {
   display: flex;

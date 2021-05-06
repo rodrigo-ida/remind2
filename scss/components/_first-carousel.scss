@@ -34,25 +34,29 @@ main {
 
 
     .banner-item {
+      height: 280px;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      background-size: cover;
+      // background-size: cover;
 
       padding: 160px;
+      background-size: 100% 280px;
+    background-repeat: no-repeat;
 
       h2 {
-        font: bold 52px $font;
+        font: bold 30px $font;
         width: 45%;
-        text-shadow: 2px 3px black;
-
+        // text-shadow: 2px 3px black;
+        color: white;
+        
       }
-
+      
       h3 {
         font: 500 20px $font;
         margin: 1rem 0;
         width: 45%;
-        text-shadow: 1px -1px black;
+        color: white;
 
 
       }
@@ -66,6 +70,11 @@ main {
         width: min-content;
         margin-top: 1rem;
       }
+    }
+
+    .banner-bebidas{
+      background-position-x: right;
+
     }
 
     .slick-dots {
